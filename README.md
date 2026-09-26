@@ -1,6 +1,6 @@
 # JupyterLite Demo
 
-
+This is an updated [anywidget-lite](https://github.com/jupyter-widgets-contrib/anywidget-lite) which uses the more up-to-date [jupyterlite/demo](https://github.com/jupyterlite/demo) template repo and adds `anywidget` and `pluot[widget]` to the `requirements.txt` file.
 
 ## Setup
 
