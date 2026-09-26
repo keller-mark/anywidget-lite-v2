@@ -1,5 +1,20 @@
 # JupyterLite Demo
 
+
+
+## Setup
+
+```sh
+uv init --python 3.12
+uv venv
+source .venv/bin/activate
+uv pip install -r requirements.txt
+jupyter lite build --contents content --output-dir dist
+cd dist
+http-server --cors='*' --port 8000 .
+```
+
+
 [![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyterlite.github.io/demo)
 
 JupyterLite deployed as a static site to GitHub Pages, for demo purposes.
@@ -33,5 +48,3 @@ optional utilities and extensions to make the JupyterLite experience more enjoya
 [`requirements.txt` file](requirements.txt) for a list of all the dependencies provided.
 
 For a template based on the Xeus kernel, see the [`jupyterlite/xeus-python-demo` repository](https://github.com/jupyterlite/xeus-python-demo)
-
-
